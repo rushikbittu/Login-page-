@@ -1,0 +1,182 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.main-container {
+    min-height: 100vh;
+    min-width: 450px;
+    font-family: 'Calibri', sans-serif;
+}
+
+/* Centering helper class */
+.centered-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Container */
+.form-container {
+    width: 400px;
+    height: 480px;
+    display: grid;
+    position: relative;
+}
+
+/* User Icon */
+.icon {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    font-size: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: 1px solid #2a2a2a;
+    background: #0e0e0e;
+    z-index: 1;
+    justify-self: center;
+}
+
+/* Font Awesome Icons */
+.fa {
+    color: #a2a2a2;
+}
+
+/* Login Form */
+form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 440px;
+    padding: 25px 25px 10px;
+    bottom: 0;
+    border-radius: 30px;
+    background: rgba(19, 19, 19, 0.736);
+    border: 1px solid rgba(255, 255, 255, 0.097);
+}
+
+/* Title */
+.title {
+    position: relative;
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Error / Success Message */
+.msg {
+    position: absolute;
+    top: 25%;
+    color: #fa2929;
+}
+
+/* Input Field Container */
+.field {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.field .fa {
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Autofill Styles */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgb(14, 14, 14) inset;
+    -webkit-text-fill-color: #bababa !important;
+}
+
+/* Form Inputs */
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px 25px 3px 0;
+    margin: 25px 0 5px;
+    font-size: 16px;
+    color: #d2d2d2;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #404040;
+    caret-color: #cccccc;
+}
+
+/* Action Row (Remember Me & Forgot Password) */
+.action {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
+
+.action label {
+    cursor: pointer;
+    color: #7d7d7d;
+}
+
+.action input {
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #9b9b9b;
+}
+
+/* Button Container */
+.btn-container {
+    padding: 20px;
+    transition: .2s linear;
+}
+
+/* Login Button */
+#login-btn {
+    padding: 5px 20px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 15px;
+    background: rgb(25, 62, 97);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#login-btn:hover {
+    cursor: pointer;
+}
+
+/* Signup Section */
+.signup {
+    margin-top: 10px;
+    color: rgb(70, 70, 70);
+}
+
+/* Button Shift Animations */
+.shift-left {
+    transform: translateX(-120%);
+}
+
+.shift-right {
+    transform: translateX(120%);
+}
+
+.shift-top {
+    transform: translateY(-150%);
+}
+
+.shift-bottom {
+    transform: translateY(150%);
+}
+
+.no-shift {
+    transform: translate(0%, 0%);
+}
